@@ -19,6 +19,7 @@ The design is highly customizable, allowing builders to modify the size of the f
 ### CAD Assembly
 
 ![CAD Design](images/Screenshot%202026-07-30%20115514.png)
+![Motor Holder](images/Screenshot%202026-07-30%20120501.png)
 
 ## Applications
 
