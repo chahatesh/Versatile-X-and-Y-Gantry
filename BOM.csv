@@ -1,0 +1,13 @@
+Part,Quantity,Purpose,Example Link
+Arduino Nano,1,Main Controller,https://store.arduino.cc/products/arduino-nano
+NEMA 17 Stepper Motor,2,X and Y Motion,https://www.omc-stepperonline.com/nema-17-stepper-motor
+A4988 Stepper Driver,2,Motor Driver,https://www.pololu.com/product/1182
+GT2 Timing Belt (6mm),2,Motion Belt,https://www.amazon.com/s?k=gt2+belt
+GT2 20T Pulley,2,Motor Pulley,https://www.amazon.com/s?k=gt2+20t+pulley
+GT2 Idler Pulley,4,Belt Routing,https://www.amazon.com/s?k=gt2+idler
+8mm Smooth Rod,4,Linear Rail,https://www.amazon.com/s?k=8mm+smooth+rod
+LM8UU Bearing,8,Linear Motion,https://www.amazon.com/s?k=lm8uu
+M3 Screw Kit,1,Assembly,https://www.amazon.com/s?k=m3+screw+kit
+M3 Nut Kit,1,Assembly,https://www.amazon.com/s?k=m3+nuts
+12V Power Supply,1,Power,https://www.amazon.com/s?k=12v+power+supply
+Hookup Wire,1,Electrical Connections,https://www.amazon.com/s?k=hookup+wire
