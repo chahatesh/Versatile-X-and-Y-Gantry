@@ -18,7 +18,7 @@ The design is highly customizable, allowing builders to modify the size of the f
 
 ### CAD Assembly
 
-![CAD](images/Screenshot 2026-07-30 115514.png)
+![CAD Design](images/Screenshot%202026-07-30%20115514.png)
 
 ## Applications
 
