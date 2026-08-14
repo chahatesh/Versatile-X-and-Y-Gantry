@@ -1,13 +1,11 @@
-Part,Quantity,Purpose,Example Link
-Arduino Nano,1,Main Controller,https://store.arduino.cc/products/arduino-nano
-NEMA 17 Stepper Motor,2,X and Y Motion,https://www.omc-stepperonline.com/nema-17-stepper-motor
-A4988 Stepper Driver,2,Motor Driver,https://www.pololu.com/product/1182
-GT2 Timing Belt (6mm),2,Motion Belt,https://www.amazon.com/s?k=gt2+belt
-GT2 20T Pulley,2,Motor Pulley,https://www.amazon.com/s?k=gt2+20t+pulley
-GT2 Idler Pulley,4,Belt Routing,https://www.amazon.com/s?k=gt2+idler
-8mm Smooth Rod,4,Linear Rail,https://www.amazon.com/s?k=8mm+smooth+rod
-LM8UU Bearing,8,Linear Motion,https://www.amazon.com/s?k=lm8uu
-M3 Screw Kit,1,Assembly,https://www.amazon.com/s?k=m3+screw+kit
-M3 Nut Kit,1,Assembly,https://www.amazon.com/s?k=m3+nuts
-12V Power Supply,1,Power,https://www.amazon.com/s?k=12v+power+supply
-Hookup Wire,1,Electrical Connections,https://www.amazon.com/s?k=hookup+wire
+1,"ELEGOO Arduino UNO R3 – ATmega328P",1,"Main controller","Amazon","https://www.amazon.com/dp/B01EWOE0UU",$16.99 
+2,"DiGiYes CNC Shield V3 + A4988 Drivers",1,"CNC control board and stepper drivers","Amazon","https://www.amazon.com/dp/B0CDR1QYR4",$14.79
+3,"Adjustable DC Power Supply",1,"Powers stepper motors and drivers","Amazon","https://www.amazon.com/dp/B09YSJQWRG",$44.99 
+4,"STEPPERONLINE NEMA 17 Stepper Motors",3,"2× X-axis + 1× Y-axis motion","Amazon","https://www.amazon.com/dp/B0B38GHRH8",$25.99
+5,"GT2 6 mm Timing Belt",2,"X/Y motion transmission","Amazon","https://www.amazon.com/dp/B0D7P77JHJ",$8.99
+6,"GT2 20T Timing Pulley",2,"Drives the GT2 belts","Amazon","https://www.amazon.com/dp/B0GWLM6FD6",$6.99 
+7,"GT2 Idler Pulley",4,"Belt routing and tensioning","Amazon","https://www.amazon.com/dp/B07CCMQ8T7",$8.99 
+8,"SeekLiny 2040 V-Slot Aluminum Extrusion, 1000 mm – 4-Pack",1,"Main structural frame","Amazon","https://www.amazon.com/dp/B0DY7FC34R",$28.99
+9,"MGN12 Linear Rail + MGN12H Carriage",4,"Linear motion for the gantry","Amazon","https://www.amazon.com/dp/B0FND9YYMR", $16.99 x2
+10,"M3 Screw/Nut/Washer Assortment",1,"Mechanical assembly","Amazon","https://www.amazon.com/dp/B0G11HFYMX",$9.99 
+11,"Micro Limit Switches",2,"X-axis homing/end stops","Amazon","https://www.amazon.com/dp/B088W8WMTB",$3.99
