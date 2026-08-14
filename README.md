@@ -28,15 +28,17 @@ The pen holder moves around the workspace and can draw:
 
 ## Hardware
 
-* Arduino Nano
-* 2× NEMA 17 motors
-* 2× A4988 drivers
+* Arduino Uno
+* 3× NEMA 17 motors
+* 3× A4988 drivers
+* CNC Sheld
 * GT2 belts and pulleys
 * 2040 extrusion
 * Linear carriages
 * 12 V power supply
 * M3 hardware
-* 3D-printed pen holder
+* 3D-printed Parts
+
 
 ## CAD
 
