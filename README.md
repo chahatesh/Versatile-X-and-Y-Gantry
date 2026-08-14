@@ -1,78 +1,49 @@
 # Versatile X and Y Gantry
 
-The Versatile X and Y Gantry is a modular, open-frame motion platform designed for robotics, automation, camera sliders, CNC experiments, pick-and-place systems, and other precision movement projects.
+A 2-axis **pen plotter** that turns digital drawings into physical drawings.
 
-The design is highly customizable, allowing builders to modify the size of the frame, attach custom tools, and adapt it for many different applications.
+The gantry uses two NEMA 17 stepper motors to move a pen along the X and Y axes. An Arduino Nano controls the motors through A4988 drivers.
+
+## How It Works
+
+**Computer → Arduino → Stepper Drivers → X/Y Motors → Pen**
+
+The pen holder moves around the workspace and can draw:
+
+* Shapes
+* Text
+* Patterns
+* Simple drawings
 
 ## Features
 
-- Modular design
-- Lightweight and rigid frame
-- 3D printable components
-- NEMA 17 stepper motor compatible
-- Belt-driven X and Y axes
-- Expandable with custom end effectors
-- Open-source hardware
-
----
-
-### CAD Assembly
-
-![CAD Design](images/Screenshot%202026-07-30%20115514.png)
-![Motor Holder](images/Screenshot%202026-07-30%20120501.png)
-
-## Applications
-
-- CNC
-- Laser engraving
-- Pen plotter
-- Camera slider
-- Pick and place
-- Robotics research
-- Vision systems
-
----
+* 2-axis movement
+* NEMA 17 stepper motors
+* GT2 belts
+* 2040 aluminum extrusion
+* Linear carriages
+* Arduino Nano
+* 3D-printed parts
+* Custom pen holder
 
 ## Hardware
 
-- Arduino Nano
-- 2× NEMA 17 stepper motors
-- GT2 timing belts
-- GT2 pulleys
-- LM8UU bearings
-- 8 mm smooth rods
-- M3 hardware
+* Arduino Nano
+* 2× NEMA 17 motors
+* 2× A4988 drivers
+* GT2 belts and pulleys
+* 2040 extrusion
+* Linear carriages
+* 12 V power supply
+* M3 hardware
+* 3D-printed pen holder
 
----
+## CAD
 
-# Bill of Materials
+![CAD Design](images/Screenshot%202026-07-30%20115514.png)
 
-| Item | Quantity | Notes |
-|-------|---------:|------|
-| Arduino Nano | 1 | Controller |
-| NEMA 17 Stepper Motor | 2 | X and Y axes |
-| A4988 or DRV8825 Driver | 2 | Stepper drivers |
-| GT2 Timing Belt (6 mm) | 2 | Motion belts |
-| GT2 20T Pulley | 2 | Motor pulleys |
-| GT2 Idler Pulley | 4 | Belt routing |
-| 8 mm Smooth Rod | 4 | Linear rails |
-| LM8UU Linear Bearing | 8 | Motion bearings |
-| M3 Screw Assortment | 1 kit | Assembly |
-| M3 Nuts | 1 pack | Assembly |
-| M3 Heat Set Inserts (optional) | As needed | Stronger threads |
-| Power Supply (12 V) | 1 | Power |
-| Wiring | As needed | Connections |
+Designed in Onshape and built around a modular frame.
 
----
+## Goal
 
-## Assembly
-
-1. Print all 3D parts.
-2. Install the smooth rods.
-3. Insert the LM8UU bearings.
-4. Mount the NEMA 17 motors.
-5. Install the GT2 pulleys and belts.
-6. Adjust belt tension.
-7. Install electronics.
-8. Upload the Arduino firmware.
-9. Calibrate movement.
+The goal is to make a simple, customizable pen plotter that can take a digital design and draw it automatically.
