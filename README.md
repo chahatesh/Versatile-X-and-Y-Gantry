@@ -42,7 +42,7 @@ The pen holder moves around the workspace and can draw:
 
 ## CAD
 
-![CAD Design](images/Screenshot%202026-07-30%20115514.png)
+![CAD Design](images/Screenshot-2026-08-19-171232.png)
 
 Designed in Onshape and built around a modular frame.
 
