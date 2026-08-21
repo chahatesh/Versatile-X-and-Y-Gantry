@@ -9,8 +9,11 @@
 #define STEP3 6
 #define DIR3  7
 
+
 AccelStepper motor1(AccelStepper::DRIVER, STEP1, DIR1);
 AccelStepper motor2(AccelStepper::DRIVER, STEP2, DIR2);
+
+
 AccelStepper motor3(AccelStepper::DRIVER, STEP3, DIR3);
 
 String command;
@@ -31,58 +34,88 @@ void setup() {
   motor2.setCurrentPosition(0);
   motor3.setCurrentPosition(0);
 
-  Serial.println("3-axis gantry controller ready.");
+  Serial.println("Gantry controller ready.");
+  Serial.println();
   Serial.println("Commands:");
-  Serial.println("X <steps>   - Move motor 1");
-  Serial.println("Y <steps>   - Move motor 2");
-  Serial.println("Z <steps>   - Move motor 3");
-  Serial.println("M1 <steps>  - Move motor 1");
-  Serial.println("M2 <steps>  - Move motor 2");
-  Serial.println("M3 <steps>  - Move motor 3");
+  Serial.println("X <steps>   - Move X axis (Motor 1 + Motor 2)");
+  Serial.println("Y <steps>   - Move Y axis (Motor 3)");
+  Serial.println("M1 <steps>  - Move Motor 1");
+  Serial.println("M2 <steps>  - Move Motor 2");
+  Serial.println("M3 <steps>  - Move Motor 3");
   Serial.println("ZERO        - Set all positions to 0");
-  Serial.println("POS         - Show all positions");
+  Serial.println("POS         - Show current positions");
 }
 
 void loop() {
+
+  // Always run all motors
   motor1.run();
   motor2.run();
   motor3.run();
 
   if (Serial.available()) {
+
     command = Serial.readStringUntil('\n');
     command.trim();
 
+
     if (command.startsWith("X ")) {
+
       long position = command.substring(2).toInt();
+
       motor1.moveTo(position);
+      motor2.moveTo(position);
+
+      Serial.print("X axis moving to: ");
+      Serial.println(position);
     }
+
 
     else if (command.startsWith("Y ")) {
+
       long position = command.substring(2).toInt();
-      motor2.moveTo(position);
+
+      motor3.moveTo(position);
+
+      Serial.print("Y axis moving to: ");
+      Serial.println(position);
     }
 
-    else if (command.startsWith("Z ")) {
-      long position = command.substring(2).toInt();
-      motor3.moveTo(position);
-    }
 
     else if (command.startsWith("M1 ")) {
+
       long position = command.substring(3).toInt();
+
       motor1.moveTo(position);
+
+      Serial.print("Motor 1 moving to: ");
+      Serial.println(position);
     }
+
 
     else if (command.startsWith("M2 ")) {
+
       long position = command.substring(3).toInt();
+
       motor2.moveTo(position);
+
+      Serial.print("Motor 2 moving to: ");
+      Serial.println(position);
     }
 
+
     else if (command.startsWith("M3 ")) {
+
       long position = command.substring(3).toInt();
+
       motor3.moveTo(position);
+
+      Serial.print("Motor 3 moving to: ");
+      Serial.println(position);
     }
 
     else if (command.equalsIgnoreCase("ZERO")) {
+
       motor1.setCurrentPosition(0);
       motor2.setCurrentPosition(0);
       motor3.setCurrentPosition(0);
@@ -91,6 +124,7 @@ void loop() {
     }
 
     else if (command.equalsIgnoreCase("POS")) {
+
       Serial.print("Motor 1: ");
       Serial.println(motor1.currentPosition());
 
@@ -101,7 +135,9 @@ void loop() {
       Serial.println(motor3.currentPosition());
     }
 
+
     else {
+
       Serial.println("Unknown command.");
     }
   }
