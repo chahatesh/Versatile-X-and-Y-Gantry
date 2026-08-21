@@ -1,6 +1,6 @@
 # Versatile X and Y Gantry
 
-A 2-axis **pen plotter** that turns digital drawings into physical drawings.
+A 2-axis pen plotter that turns digital drawings into physical drawings.
 
 The gantry uses two NEMA 17 stepper motors to move a pen along the X and Y axes. An Arduino Nano controls the motors through A4988 drivers.
 
@@ -45,6 +45,7 @@ The pen holder moves around the workspace and can draw:
 ![CAD Design](images/Screenshot-2026-08-19-171232.png)
 
 Designed in Onshape and built around a modular frame.
+Onshape Link - https://cad.onshape.com/documents/9da4eec7b662b0f1e534ab21/w/bc1797026b485face401b90d/e/65b38d2f3db30137066017d5?renderMode=0&uiState=6a8887a45f2d23fca2b32553
 
 ## Goal
 
